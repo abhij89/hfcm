@@ -1,0 +1,27 @@
+{
+    "name": "abhij89/hfcm",
+    "description": "A package for adding header, footer, body snippets",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abhishek",
+            "email": "abhij89@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Abhij89\\Hfcm\\":"src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Abhij89\\Hfcm\\HfcmServiceProvider"
+            ],
+            "aliases": {
+                "Hfcm": "Abhij89\\Hfcm\\Facades\\HfcmFacade"
+            }
+        }
+    }
+}
