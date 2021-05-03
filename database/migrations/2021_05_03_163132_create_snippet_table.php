@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateSnippetTable extends Migration
 {
@@ -15,9 +15,9 @@ class CreateSnippetTable extends Migration
     {
         Schema::create($this->getTableName(), function (Blueprint $table) {
             $table->increments('id');
-            $table->longText('header');
-            $table->longText('body');
-            $table->longText('footer');
+            $table->longText('header')->nullable();
+            $table->longText('body')->nullable();
+            $table->longText('footer')->nullable();
             $table->timestamps();
         });
     }
