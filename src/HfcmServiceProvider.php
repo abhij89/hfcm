@@ -38,7 +38,7 @@ class HfcmServiceProvider extends ServiceProvider
         ], 'hfcm.config');
 
         $this->publishes([
-            __DIR__ . '/../database/migrations/create_hfcm_table.php' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_hfcm_table.php'),
+            __DIR__ . '/../database/migrations/' => database_path('migrations'),
         ], 'hfcm.migrations');
 
         $this->publishes([
